@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\URL; // <--- PASTIKAN BARIS INI ADA!
 
 class AppServiceProvider extends ServiceProvider
 {
