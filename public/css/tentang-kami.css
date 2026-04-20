@@ -1,0 +1,529 @@
+/* ================================================ */
+/*              SECTION  PENGURUS                  */
+/* ================================================ */
+
+
+:root {
+    --dmi-green: #215a28;
+    --dmi-green-light: #f0f7f1;
+    --text-heading: #1e293b;
+    --text-body: #475569;
+    --border-soft: #f1f5f9;
+}
+
+.pengurus-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #fdfdfd;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Header Styling */
+.page-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.main-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--text-heading);
+    margin: 0;
+}
+
+.org-name {
+    font-size: 1.3rem;
+    color: var(--dmi-green);
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.badge-period {
+    display: inline-block;
+    background-color: var(--dmi-green-light);
+    color: var(--dmi-green);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-radius: 50px;
+    font-weight: 700;
+    margin-top: 20px;
+    font-size: 0.85rem;
+    border: 1px solid rgba(33, 90, 40, 0.2);
+}
+
+.divider-center {
+    width: 60px;
+    height: 4px;
+    background-color: var(--dmi-green);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    opacity: 0.3;
+}
+
+.table-wrapper-center {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Table Card Design */
+.table-card {
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.15); /* Shadow diperhalus sedikit */
+    margin-bottom: 40px; /* Jarak antar card dikurangi sedikit */
+    border: 2px solid var(--border-soft);
+}
+
+.table-card-header {
+    background-color: #fff;
+    padding-top: 15px; /* Dikurangi dari 20px */
+    padding-bottom: 15px; /* Dikurangi dari 20px */
+    padding-left: 25px;
+    padding-right: 25px;
+    border-bottom: 1.5px solid #00000011;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.table-card-header h3 {
+    font-size: 0.9rem; /* Ukuran font judul tabel dikecilkan */
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--text-heading);
+    margin: 0;
+}
+
+/* Table Content */
+.dmi-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.dmi-table th {
+    background-color: #f8fafc;
+    padding-top: 10px; /* Lebih ramping */
+    padding-bottom: 10px; /* Lebih ramping */
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 0.7rem; /* Font size dikecilkan */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #94a3b8;
+    text-align: center;
+}
+
+.dmi-table td {
+    padding-top: 12px; /* TINGGI TABEL: Dikecilkan dari 16px */
+    padding-bottom: 12px; /* TINGGI TABEL: Dikecilkan dari 16px */
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 1.5px solid var(--border-soft);
+    color: var(--text-body);
+    font-size: 0.85rem; /* FONT SIZE: Dikecilkan dari 0.95rem */
+    vertical-align: middle;
+}
+
+.dmi-table tr:hover {
+    background-color: var(--dmi-green-light);
+    transition: background-color 0.2s ease;
+}
+
+/* Kolom Jabatan & Nama */
+.dmi-table td:first-child {
+    font-weight: 700;
+    color: #334155;
+    border-right: 1px solid var(--border-soft);
+    width: 35%; /* Disesuaikan lebarnya */
+}
+
+.dmi-table td:last-child {
+    color: #1a202c;
+    font-weight: 500;
+}
+
+/* Row Khusus */
+.row-important td {
+    background-color: var(--dmi-green-light);
+    color: var(--dmi-green) !important;
+}
+
+/* Departemen Separator */
+.dept-separator td {
+    background-color: #f8fafc !important;
+    font-size: 0.7rem !important; /* Font separator dikecilkan */
+    color: var(--dmi-green) !important;
+    text-align: center !important;
+    font-weight: 800 !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-top: 8px !important; /* Lebih tipis */
+    padding-bottom: 8px !important; /* Lebih tipis */
+    border-right: none !important;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 1.5rem;
+    }
+    .table-wrapper-center {
+        padding: 0 3px;
+    }
+    .table-card {
+        padding: 0 3px;
+    }
+    .dmi-table td {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        font-size: 0.8rem;
+    }
+    .org-name{
+        font-size: 0.9rem;
+        padding-top: 10px;
+    }
+    .badge-period{
+        font-size: 0.7rem;
+    }
+}
+
+/* ================================================ */
+/*              SECTION  PROFIL                  */
+/* ================================================ */
+
+/* Container Utama Hero */
+.dmi-hero-center {
+    background-image: url('../img/tentang/profil/gedung-dmi.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Menggunakan tinggi layar penuh */
+    position: relative;
+    width: 100%;
+}
+
+/* Overlay Hijau Solid Presisi Tengah */
+.dmi-overlay-green {
+    background-color: rgba(28, 28, 28, 0.697); /* Hijau DMI pekat */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;             /* Mengaktifkan flexbox */
+    justify-content: center;    /* Tengah secara horizontal */
+    align-items: center;        /* Tengah secara vertikal */
+    text-align: center;         /* Tengah teks */
+}
+
+/* Konten Hero */
+.dmi-hero-content {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif; /* Pastikan font ini diimport */
+}
+
+.dmi-pre-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.dmi-main-title {
+    font-size: 4rem; /* Ukuran besar sesuai gambar */
+    font-weight: 800;
+    line-height: 1.1;
+    margin: 0 auto 20px;
+    text-transform: uppercase;
+}
+
+.dmi-tagline {
+    font-size: 1.2rem;
+    width: 50%;
+    padding: 20px 0;
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    .dmi-hero-center {
+        height: auto;
+        min-height: 80vh; /* Sedikit lebih pendek di tablet/HP agar user tahu ada konten di bawah */
+    }
+    
+    .dmi-main-title {
+        font-size: 32px;
+        letter-spacing: 1px;
+    }
+    .dmi-tagline{
+        width: 100%;
+        font-size: 16px;
+        padding: 10px 0;
+    }
+    .grid-layout{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .dmi-profile-body {
+        padding: 40px 15px;
+    }
+    
+    .dmi-main-text {
+        text-align: justify; /* Terkadang teks panjang lebih rapi justify di layar sangat sempit */
+        text-align-last: center; /* Tapi baris terakhir tetap di tengah */
+    }
+}
+
+/* ============================================== */
+/* --- DMI HISTORY SECTION --- */
+.dmi-history-section {
+    padding: 60px 20px;
+    background-color: #fcfdfc;
+    font-family: 'Inter', sans-serif;
+}
+
+.dmi-container {
+    max-width: 1000px; /* Lebih sempit agar lebih compact di desktop */
+    margin: 0 auto;
+}
+
+/* --- HEADER --- */
+.main-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.main-header h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #1a1a1a;
+    letter-spacing: -1.5px;
+    margin: 0;
+}
+
+.main-header h1 span {
+    display: block;
+    color: #215a28;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: 8px;
+}
+
+.underline {
+    width: 35px;
+    height: 3px;
+    background: #d4af37;
+    margin: 15px auto;
+    border-radius: 10px;
+}
+
+/* --- GRID LAYOUT --- */
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; /* Jarak lebih rapat agar compact */
+}
+
+/* --- CARD DESIGN (PREMIUM BEFORE HOVER) --- */
+.history-card {
+    background: #ffffff;
+    /* Border sangat tipis dan halus */
+    border: 1px solid rgba(0, 0, 0, 0.04); 
+    border-radius: 28px; /* Sudut lebih membulat agar modern */
+    padding: 25px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* Bayangan sangat halus sejak awal */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.152); 
+    transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
+    height: 100%;
+}
+
+/* --- INTERACTIVE HOVER --- */
+.history-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(33, 90, 40, 0.2);
+    /* Shadow menjadi lebih dalam saat hover */
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.177); 
+
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 12px;
+}
+
+/* --- ICON WRAPPER (ELITE STYLE) --- */
+.icon-wrapper {
+    width: 44px;
+    height: 44px;
+    background: #f4f8f4;
+    color: #215a28;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    transition: all 0.4s ease;
+}
+
+.history-card:hover .icon-wrapper {
+    background: #215a28;
+    color: #ffffff;
+    box-shadow: 0 8px 16px rgba(33, 90, 40, 0.2);
+}
+
+.card-header h2 {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+/* --- TEXT STYLE --- */
+.history-card p {
+    font-size: 0.9rem; /* Lebih kecil agar compact */
+    line-height: 1.6;
+    color: #555;
+    margin: 0;
+    text-align: justify;
+    opacity: 0.9;
+}
+
+/* --- MOBILE RESPONSIVE --- */
+@media (max-width: 850px) {
+    .grid-layout {
+        grid-template-columns: 1fr;
+    }
+    
+    .main-header h1 { font-size: 1.6rem; }
+}
+
+@media (max-width: 480px) {
+    .history-card {
+        padding: 20px;
+        border-radius: 20px;
+    }
+}
+
+.dmi-impact-section {
+    padding: 80px 0;
+    background-color: #e5e9ecc1;; /* Abu-abu sangat muda agar kontras dengan card putih sebelumnya */
+}
+
+.impact-wrapper {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr; /* Membagi dua kolom tidak rata */
+    gap: 60px;
+    align-items: center;
+}
+
+.sub-badge {
+    display: inline-block;
+    padding: 6px 16px;
+    background: rgba(45, 90, 39, 0.1);
+    color: #2d5a27;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.impact-title {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.impact-title span {
+    display: block;
+    color: #2d5a27;
+    font-weight: 800;
+}
+
+.impact-desc {
+    font-size: 1.1rem;
+    color: #636e72;
+    line-height: 1.8;
+}
+
+/* Kolom Fitur */
+.impact-features {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateX(10px);
+}
+
+.feature-icon {
+    width: 50px;
+    height: 50px;
+    background: #2d5a27;
+    color: #fff;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.feature-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+.feature-item p {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin: 0;
+}
+
+/* Responsif */
+@media (max-width: 992px) {
+    .impact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .impact-features{
+        padding: 15px 25px;
+    }
+    .impact-content {
+        text-align: center;
+    }
+    .impact-title { font-size: 2rem; }
+}
