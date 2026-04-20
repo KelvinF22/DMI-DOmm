@@ -1,13 +1,16 @@
-/* Menghilangkan highlight biru saat ditekan di HP */
-* {
-    -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none; /* Opsional: Menghilangkan menu pop-up saat ditekan lama */
-}
-
-/* Opsional: Agar elemen yang bisa diklik tidak punya outline yang mengganggu */
-*:focus {
+/* Gunakan !important untuk memaksa perubahan */
+a, 
+button, 
+input, 
+textarea, 
+select, 
+div, 
+span {
+    -webkit-tap-highlight-color: rgba(0,0,0,0) !important;
+    -webkit-tap-highlight-color: transparent !important;
     outline: none !important;
-    box-shadow: none !important;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
 }
 
 /* ==========================================================================
