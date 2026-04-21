@@ -252,7 +252,7 @@
 
         <div class="news-archive-list js-reveal">
             <div class="archive-header">
-                <h4 class="archive-title">Eksplorasi Berita Lainnya</h4>
+                <h4 class="archive-title">Berita Lainnya</h4>
                 <a href="/redaksi/berita/semua-berita" class="view-all-link">
                     Lihat Semua <i class="fas fa-arrow-right"></i>
                 </a>

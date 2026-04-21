@@ -636,6 +636,12 @@ body {
     .news-bento-grid {
         grid-template-columns: 1fr; /* Balik ke 1 kolom jika layar terlalu sempit (biar gak sesak) */
     }
+    .archive-title{
+        font-size: 16px;
+    }
+    .view-all-link {
+        font-size: 12px; /* Sedikit diperbesar agar mudah diklik */
+    }
 }
 
 /* ============================= */
