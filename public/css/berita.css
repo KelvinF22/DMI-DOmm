@@ -979,6 +979,6 @@ body {
 
 @media (max-width: 380px) {
     .search-box {
-        padding: 0 10px;
+        width: 90%;
     }
 }
