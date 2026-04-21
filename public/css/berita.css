@@ -997,3 +997,10 @@ body {
         font-size: 13px;
     }   
 }
+
+@media (max-width: 380px) {
+    .search-box {
+        width: 340px; /* Di HP, dia akan otomatis mengikuti lebar layar */
+        padding: 4px; /* Sedikit lebih rapat agar tidak makan tempat */
+    }
+}
