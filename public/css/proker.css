@@ -384,19 +384,31 @@ span {
 }
 
 .wf-arrow::after {
-    content: '▶';
+    /* 1. Masukkan kode unicode ikon */
+    content: '\f0da'; 
+    
+    /* 2. Tentukan Font Family (WAJIB) */
+    /* Gunakan "Font Awesome 5 Free" atau "Font Awesome 6 Free" sesuai versi Anda */
+    font-family: "Font Awesome 5 Free"; 
+    
+    /* 3. Tentukan Font Weight (WAJIB: 900 untuk Solid/Bold) */
+    font-weight: 900; 
+    
     position: absolute;
     right: -5px;
-    top: -8px;
+    top: -12px; /* Sesuaikan agar tegak lurus di tengah garis */
     color: #e2e8f0;
-    font-size: 12px;
+    font-size: 16px;
+    
+    /* Mencegah rendering aneh di beberapa browser mobile */
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
 }
 
 .arrow-left::after {
+   content: '\f0d9'; /* Unicode untuk caret-left */
     left: -5px;
     right: auto;
-    top: -7.65px;
-    content: '◀';
 }
 
 .wf-vertical-line {
