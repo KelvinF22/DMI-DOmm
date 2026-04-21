@@ -243,12 +243,15 @@ body {
     }
 
     .category {
-        font-size: 10px;
+        font-size: 11px;
         margin-bottom: 4px;
     }
 
     .rank {
-        font-size: 28px; /* Mengecilkan angka ranking populer */
+        font-size: 24px; /* Mengecilkan angka ranking populer */
+    }
+    .trend-content h4 {
+        font-size: 16px; /* Mengecilkan judul berita populer */
     }
 }
 

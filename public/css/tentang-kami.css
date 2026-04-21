@@ -544,4 +544,10 @@ span {
         text-align: center;
     }
     .impact-title { font-size: 2rem; }
+
+}
+@media (max-width: 768px) {
+    .impact-desc{
+        padding: 0 15px;
+    }
 }
