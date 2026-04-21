@@ -1606,9 +1606,11 @@ span {
         padding: 30px 0;
     }
     .eco-head .title-main {
-        font-size: 1.2rem;
+        font-size: 24px;
     }
-    
+    .tag-hijau {
+        font-size: 11px;
+    }
     .eco-hero {
         height: 150px; /* Hero lebih pendek di HP agar tidak memenuhi layar */
     }
