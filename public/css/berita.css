@@ -695,12 +695,19 @@ body {
 
 .search-box {
     display: flex;
+    align-items: center; /* Menjaga input & tombol tetap sejajar tengah */
     background: #f4f7f4;
     padding: 6px;
     border-radius: 50px;
     border: 2px solid transparent;
     transition: 0.3s;
-    width: 380px;
+
+    /* --- BAGIAN YANG BISA KAMU ATUR --- */
+    width: 500px; /* Silakan ganti angka ini (misal 450px, 600px, dll) sesuai keinginan */
+    
+    /* --- PROTEKSI MOBILE --- */
+    max-width: 100%; /* Mencegah box meluber keluar layar di HP */
+    box-sizing: border-box; /* Memastikan padding tidak menambah lebar total */
 }
 
 .search-box:focus-within {
@@ -711,6 +718,7 @@ body {
 
 .search-box input {
     flex: 1;
+    min-width: 0; /* PENTING: Supaya input mau mengecil saat layar HP sempit */
     border: none;
     background: transparent;
     padding: 10px 18px;
@@ -727,6 +735,10 @@ body {
     border-radius: 50%;
     cursor: pointer;
     transition: 0.3s;
+    flex-shrink: 0; /* Mencegah tombol jadi gepeng/oval di layar kecil */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .divider { border: none; height: 1px; background: #eee; margin: 40px 0; }
@@ -975,10 +987,13 @@ body {
     .subtitle {
         font-size: 11px;
     }
-}
-
-@media (max-width: 380px) {
     .search-box {
-        width: 90%;
+        width: 360px; /* Di HP, dia akan otomatis mengikuti lebar layar */
+        padding: 4px; /* Sedikit lebih rapat agar tidak makan tempat */
     }
+    
+    .search-box input {
+        padding: 8px 12px; /* Padding input lebih kecil agar compact */
+        font-size: 13px;
+    }   
 }
