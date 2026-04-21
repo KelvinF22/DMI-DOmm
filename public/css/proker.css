@@ -1149,7 +1149,7 @@ span {
 
 /* --- EKONOMI & SOSIAL SECTION --- */
 .dmi-eco-social {
-    padding: 70px 0;
+    padding: 40px 0;
     margin-bottom: 100px;
     background: #fdfdfd;
     position: relative;
@@ -1285,6 +1285,7 @@ span {
     .eco-lead { font-size: 15px; }
     .frame-top, .frame-bottom { width: 90%; position: relative; height: 250px; margin-bottom: -50px; left: 0; right: 0; }
     .eco-visual-composition { height: auto; display: flex; flex-direction: column; }
+    .dmi-eco-social { padding: 30px 0; }
 }
 
 
@@ -1293,7 +1294,7 @@ span {
 /* ===================================================== */
 /* --- TRAINING SECTION STYLING --- */
 .dmi-training-section {
-    padding: 80px 0;
+    padding: 40px 0;
     margin-bottom: 40px;
     background: #ffffff;
 }
@@ -1381,6 +1382,7 @@ span {
     .main-training-card { height: 400px; }
 }
 @media (max-width: 768px) {
+    .dmi-training-section { padding: 30px 0; }
     .training-header{
         display: flex;
         flex-direction: column;
@@ -1395,24 +1397,11 @@ span {
 /* ====================================================== */
 /* SECTION: PROGRAM LINGKUNGAN (MASJID HIJAU)    */
 /* ====================================================== */
-
-/* Definisi Container agar tidak lebar 0 */
-.container-custom {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.dmi-eco-clean {
-    padding: 100px 0;
-    background: #ffffff;
-    font-family: 'Inter', sans-serif;
-}
-
 /* --- REVEAL SYSTEM (Penyebab error sebelumnya) --- */
 /* Gunakan Font System agar tidak download Google Fonts (Sangat Hemat Load) */
 .dmi-eco-clean {
-    padding: 40px 0;
+    padding: 80px 0;
+    margin-bottom: 200px;
     background: #fff;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
@@ -1425,7 +1414,7 @@ span {
 
 /* REVEAL SYSTEM: Paling efisien (Hanya Opacity) */
 /* --- SECTION MASJID HIJAU LITE --- */
-.eco-simple-v5 { padding: 80px 0; background: #fff; }
+.eco-simple-v5 { padding: 40px 0; background: #fff; }
 .container-lite { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
 
 /* REVEAL GLOBAL SINKRON */
@@ -1613,6 +1602,9 @@ span {
 /* Responsive */
 /* Media Query khusus untuk layar sangat kecil */
 @media (max-width: 768px) {
+    .eco-simple-v5 {
+        padding: 30px 0;
+    }
     .eco-head .title-main {
         font-size: 1.2rem;
     }
@@ -1727,6 +1719,7 @@ span {
 
 /* --- DESKTOP VIEW (992px+) --- */
 @media (min-width: 992px) {
+    
     .mrj-grid {
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: 280px;
@@ -1749,6 +1742,9 @@ span {
     .card-solid i { font-size: 45px; }
 }
 @media (max-width: 768px) {
+    .mrj-bento{
+        padding: 30px 0;
+    }
     .mrj-title { font-size: 1.8rem; }
 }
 
@@ -1769,7 +1765,8 @@ span {
 }
 
 .mbs-section {
-    padding: 100px 0;
+    padding: 40px 0;
+    margin-bottom: 100px;
     background-color: #ffffff;
     font-family: 'Inter', sans-serif;
     overflow: hidden;
@@ -1905,6 +1902,7 @@ span {
 
 }
 @media (max-width: 768px) {
+    .mbs-section { padding: 30px 0; }
     .mbs-title { font-size: 1.8rem; }
     .mbs-banner-wrapper { height: 296px;}
     .mbs-floating-info h4, .mbs-floating-info p { font-size: 10px; }
@@ -2102,6 +2100,14 @@ span {
         right: -40px;
         bottom: -40px;
     }
+}
+
+@media screen and (max-width: 768px) {
+    .wk-premium-section { 
+        padding: 30px 0; 
+        margin-bottom: 80px;
+    }
+    
 }
 
 /* ================================================== */
@@ -2325,7 +2331,7 @@ span {
 /* --- DMI ARCHITECTURE SECTION STYLING --- */
 
 .dmi-arch-section {
-    padding: 80px 20px;
+    padding: 60px 20px;
     background-color: #ffffff;
     font-family: 'Inter', 'Segoe UI', Tahoma, sans-serif;
     color: #1a1a1a;
@@ -2521,7 +2527,8 @@ span {
 
 /* --- SECTION WISATA RELIGI --- */
 .religi-section {
-    padding: 100px 20px;
+    padding: 60px 20px;
+    margin-bottom: 100px;
     background-color: #f9f9f9;
     font-family: 'Inter', sans-serif;
 }
@@ -2656,7 +2663,10 @@ span {
 
 /* --- MOBILE RESPONSIVE (OPTIMIZED) --- */
 @media (max-width: 768px) {
-    .religi-section { padding: 60px 15px; }
+    .religi-section { 
+        padding: 30px 20px;
+        
+     }
     .religi-tag{
         font-size: 10px;
     }

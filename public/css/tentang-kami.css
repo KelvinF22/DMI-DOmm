@@ -27,7 +27,7 @@ span {
 }
 
 .pengurus-container {
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 60px;
     background-color: #fdfdfd;
     font-family: 'Inter', sans-serif;
@@ -189,6 +189,9 @@ span {
 
 /* Responsif */
 @media (max-width: 768px) {
+    .pengurus-container {
+        padding-top: 30px;
+    }
     .main-title {
         font-size: 1.5rem;
     }
