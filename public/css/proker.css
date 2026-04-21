@@ -969,7 +969,7 @@ span {
 }
 
 .category-tag { 
-    font-size: 0.7rem; 
+    font-size: 14px; 
     font-weight: 800; 
     color: var(--accent-green); 
     letter-spacing: 1.5px; 
@@ -977,7 +977,7 @@ span {
     display: block; 
 }
 .section-title-main { 
-    font-size: 1.8rem; 
+    font-size: 32px; 
     font-weight: 800; 
     color: #1a202c; 
     margin: 0; 
@@ -1121,10 +1121,13 @@ span {
         font-size: 14px;
     }
     .section-title-main{
-        font-size: 20px;
+        font-size: 24px;
     }
     .master-card{
         width: 100%;
+    }
+    .action-footer{
+        padding: 20px;
     }
 }
 
